@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ===================================================================
+       META & SEO
+  ==================================================================== -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arman Nik Khah — Research Portfolio (Audio/Video, Realtime Systems)</title>
+  <meta name="description" content="Graduate researcher focused on real-time audio/video, XR/360° streaming, spatial audio, and low-latency systems. Targeting research internships at Microsoft Research, Adobe, and NVIDIA for Summer ’26." />
+  <link rel="canonical" href="https://example.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Arman Nik Khah — Research Portfolio" />
+  <meta property="og:description" content="Realtime audio/video • XR/360° streaming • spatial audio • low-latency systems • publications & projects." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com/" />
+  <!-- You can replace with an actual image later -->
+  <meta property="og:image" content="https://example.com/og-image.png" />
+
+  <!-- Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicons (optional) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" />
+
+  <!-- Structured Data: Person + Publication -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Arman Nik Khah",
+    "jobTitle":"Graduate Researcher (Audio/Video, Realtime Systems)",
+    "email":"mailto:arman.nikkhah@utdallas.edu",
+    "url":"https://example.com/",
+    "sameAs":[
+      "https://www.linkedin.com/in/arman-nik-khah/",
+      "https://github.com/IamArmanNikkhah"
+    ],
+    "affiliation":{
+      "@type":"CollegeOrUniversity",
+      "name":"University of Texas at Dallas"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ScholarlyArticle",
+    "name":"Unsupervised Bayesian Surprise Detection in Spatial Audio with Convolutional Variational Autoencoder and LSTM Model",
+    "author":[
+      {"@type":"Person","name":"Arman Nik Khah"},
+      {"@type":"Person","name":"Chitsein Htun"},
+      {"@type":"Person","name":"Ravi Prakash"}
+    ],
+    "datePublished":"2024-06-01",
+    "isPartOf":{
+      "@type":"PublicationVolume",
+      "name":"IMX Workshops ’24"
+    },
+    "identifier":"https://doi.org/10.1145/3672406.3672422"
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================================================================
+       HEADER / NAV
+  ================================================================= -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="Homepage">
+        <!-- Simple monogram mark -->
+        <span aria-hidden="true" class="brand-mark">AN</span>
+        <span class="brand-text">Arman Nik Khah</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle navigation">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <nav id="siteNav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#fit">Fit Highlights</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#pubs">Publications</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#teaching">Teaching</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button class="btn-ghost small" id="recruiterModeBtn" aria-pressed="false">Recruiter Mode</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================================================================
+       HERO
+  ================================================================= -->
+  <section class="hero" id="about" aria-labelledby="heroTitle">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1 id="heroTitle">Realtime Audio/Video • XR/360° Streaming • Low-Latency Systems</h1>
+        <p class="lead">
+          Graduate researcher (M.S. ’25; PhD in progress) focused on <strong>spatial audio</strong>, <strong>WebRTC/streaming</strong>, and <strong>QoE/ABR</strong>. 
+          Published at IMX Workshops ’24; targeting <strong>Summer ’26</strong> research/SWE internships (remote/hybrid OK). Work authorization: <strong>F-1 CPT/OPT</strong>.
+        </p>
+
+        <div class="cta-row" role="group" aria-label="Primary calls to action">
+          <!-- Replace href with actual resume links (PDF) when ready -->
+          <a class="btn" href="assets/resume-research.pdf">Download Resume — Research</a>
+          <a class="btn btn-ghost" href="assets/resume-systems.pdf">Download Resume — Systems</a>
+        </div>
+
+        <ul class="quick-facts" role="list">
+          <li>Dallas, TX</li>
+          <li>Advisor: Dr. Ravi Prakash</li>
+          <li>Open to Microsoft Research, Adobe, NVIDIA</li>
+        </ul>
+      </div>
+
+      <!-- Optional portrait placeholder (SVG) -->
+      <div class="hero-art" aria-hidden="true">
+        <svg width="240" height="240" viewBox="0 0 240 240" role="img">
+          <title>Abstract avatar</title>
+          <circle cx="120" cy="120" r="118" fill="var(--accent-100)" stroke="var(--accent-300)" stroke-width="4"/>
+          <circle cx="120" cy="95" r="40" fill="var(--accent-300)" />
+          <rect x="60" y="140" width="120" height="50" rx="16" fill="var(--accent-200)" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- ==============================================================
+         FIT HIGHLIGHTS (tailored to MSR / Adobe / NVIDIA)
+    ============================================================== -->
+    <section id="fit" class="section">
+      <div class="container">
+        <h2>Fit Highlights for Research Labs</h2>
+        <p class="section-intro">
+          The bullets below are tuned for <strong>Microsoft Research</strong> (Speech/Audio/Systems), <strong>Adobe Research</strong> (audio/media ML),
+          and <strong>NVIDIA Research</strong> (systems/graphics/audio). References: IMX ’24 and current research submissions (SAE, MARC).
+        </p>
+
+        <div class="cards three-up" id="fitCards">
+          <article class="card">
+            <h3>Microsoft Research</h3>
+            <ul>
+              <li>Realtime audio/video, <strong>WebRTC</strong>, <strong>QoE/ABR</strong>; calibration (ECE/NLL), risk (CVaR).</li>
+              <li>Projects: <strong>SAE</strong> (viewport prediction on S²), <strong>MARC</strong> (risk-aware 360° ABR with spatial audio).</li>
+              <li>Teaching: Operating Systems & Networks — strong systems grounding; ~50 students, guest lectures.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Adobe Research</h3>
+            <ul>
+              <li>Audio/vision ML with <strong>PyTorch</strong>; Ambisonics (FOA), STFT, mel-spectrograms, AEM.</li>
+              <li>Published: IMX Workshops ’24 (unsupervised spatial-audio surprise detection, CVAE–LSTM).</li>
+              <li>Clean reproducibility: Dockerized artifacts, deterministic splits, evaluation metrics.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>NVIDIA Research</h3>
+            <ul>
+              <li>Low-latency pipelines, <strong>FFmpeg</strong>/<strong>GStreamer</strong>, codecs (H.264/265/AV1), <strong>CUDA/NVENC (found.)</strong>.</li>
+              <li>Latency/throughput thinking; profiling, p95/p99; systems + ML edge.</li>
+              <li>Interest in MoQ vs WebRTC trade-offs for speech/video.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         PROJECTS — concise, recruiter-friendly case cards
+    ============================================================== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Selected Projects</h2>
+
+        <div class="cards two-up">
+          <!-- MARC -->
+          <article class="card project">
+            <header class="project-head">
+              <h3>MARC — Risk-Aware ABR for 360° (Video + Spatial Audio)</h3>
+              <span class="badge">Realtime Control</span>
+            </header>
+            <p>
+              UKF posterior entropy coupled to CVaR to hedge tail-QoE; fuses video and spatial audio signal for holistic QoE control.
+            </p>
+            <ul class="project-points">
+              <li>Vectorized coarse-to-fine candidate selection; entropy-gated saliency; optional per-tile risk micro-actuation.</li>
+              <li><em>Confirm & Fill:</em> +A% 1st-pct QoE, +B% bandwidth efficiency; ≤C ms decision latency.</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" aria-label="MARC paper (placeholder)">Paper</a>
+              <a href="#" aria-label="MARC code repository (placeholder)">Code</a>
+            </div>
+            <div class="tag-row" aria-label="Tech stack">
+              <span class="tag">WebRTC</span><span class="tag">ABR/QoE</span><span class="tag">CVaR</span><span class="tag">PyTorch</span>
+            </div>
+          </article>
+
+          <!-- SAE -->
+          <article class="card project">
+            <header class="project-head">
+              <h3>SAE — Spatiotemporal Attentive Entropy on S²</h3>
+              <span class="badge">Viewport Prediction</span>
+            </header>
+            <p>
+              Geometry-correct cross-entropy between vMF attention and prediction; SO(3)-invariant; lightweight LSTM forecaster for realtime.
+            </p>
+            <ul class="project-points">
+              <li>ECE-sphere/NLL calibration; robust to sampling-rate shifts & synthetic dropouts.</li>
+              <li><em>Confirm & Fill:</em> ~X% great-circle MAE reduction at ≤Y ms end-to-end latency.</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" aria-label="SAE preprint (placeholder)">Preprint</a>
+              <a href="#" aria-label="SAE repo (placeholder)">Code</a>
+            </div>
+            <div class="tag-row" aria-label="Tech stack">
+              <span class="tag">Spherical ML</span><span class="tag">LSTM</span><span class="tag">Calibration</span><span class="tag">Docker</span>
+            </div>
+          </article>
+
+          <!-- Surprise Detection -->
+          <article class="card project">
+            <header class="project-head">
+              <h3>Bayesian Surprise Detection for Spatial Audio (Published)</h3>
+              <span class="badge">IMX Workshops ’24</span>
+            </header>
+            <p>
+              Unsupervised CVAE–LSTM pipeline on FOA (B-format) with TEA modeling; log mel-spectrograms and Audio Energy Maps via circular harmonics.
+            </p>
+            <ul class="project-points">
+              <li>Scenario achieved <strong>F1 = 100%</strong>; artifact release planned.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://dl.acm.org/doi/10.1145/3672406.3672422" target="_blank" rel="noopener" aria-label="Read DOI publication">DOI</a>
+              <a href="#" aria-label="Project repo (placeholder)">Code</a>
+            </div>
+            <div class="tag-row" aria-label="Tech stack">
+              <span class="tag">FOA</span><span class="tag">CVAE–LSTM</span><span class="tag">AEM</span><span class="tag">STFT</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         PUBLICATIONS
+    ============================================================== -->
+    <section id="pubs" class="section">
+      <div class="container">
+        <h2>Publications</h2>
+        <ol class="pub-list">
+          <li>
+            <strong>Arman Nik Khah</strong>, Chitsein Htun, Ravi Prakash. 
+            <em>Unsupervised Bayesian Surprise Detection in Spatial Audio with Convolutional Variational Autoencoder and LSTM Model.</em>
+            IMX Workshops ’24, Stockholm. 
+            <a href="https://dl.acm.org/doi/10.1145/3672406.3672422" target="_blank" rel="noopener">DOI: 10.1145/3672406.3672422</a>
+          </li>
+          <li>
+            <strong>Arman Nik Khah</strong>. <em>Spatiotemporal Attentive Entropy: A Geometry-Correct Cross-Entropy on S² for Calibrated, Low-Latency Viewport Prediction.</em> Manuscript submitted, 2025.
+          </li>
+          <li>
+            <strong>Arman Nik Khah</strong>. <em>Self-Aware Streaming: Using Model Entropy to Control Tail-Risk in 360° ABR.</em> Manuscript submitted, 2025.
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         SKILLS
+    ============================================================== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div>
+            <h3>Realtime / Streaming</h3>
+            <p>WebRTC, RTP/RTCP, HLS/DASH, MPEG-OMAF, ABR, QoE (VMAF/SSIM/PSNR)</p>
+          </div>
+          <div>
+            <h3>Audio / Signal Processing</h3>
+            <p>Ambisonics (FOA), STFT, mel-spectrograms, AEM, circular harmonics</p>
+          </div>
+          <div>
+            <h3>Systems / Perf</h3>
+            <p>C/C++, Python, Linux, concurrency, Docker, Git; p95/p99 latency profiling</p>
+          </div>
+          <div>
+            <h3>ML Tooling</h3>
+            <p>PyTorch, TensorFlow; VAEs/CVAEs, LSTM/Seq2Seq, Transformers; calibration (ECE/NLL), CVaR</p>
+          </div>
+          <div>
+            <h3>Media Tooling</h3>
+            <p>FFmpeg, GStreamer; codecs: H.264/AVC, H.265/HEVC, AV1; CUDA/NVENC (foundational)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         TEACHING & MENTORING
+    ============================================================== -->
+    <section id="teaching" class="section">
+      <div class="container">
+        <h2>Teaching & Mentoring</h2>
+        <ul class="teaching-list">
+          <li><strong>Teaching Assistant — Computer Networks (Fall ’25):</strong> Delivered multiple lectures; labs on RTP/RTCP/WebRTC; coached latency/jitter & QoE evaluation for ~50 students.</li>
+          <li><strong>Teaching Assistant — Advanced Operating Systems (Fall ’24):</strong> Mentored distributed systems projects; synchronization, kernel subsystems; profiling & debugging.</li>
+          <li><strong>Teaching Assistant — Programming Language Paradigms (Spring ’24; Fall ’23):</strong> Functional/OO paradigms, type systems, runtime models.</li>
+          <li><strong>Supervisor — Undergraduate Research Project Course (ongoing):</strong> Experimental design, implementation, evaluation, and technical writing.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         CONTACT
+    ============================================================== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="section-intro">For internships and collaborations (Summer ’26):</p>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Direct</h3>
+            <p>
+              <a id="emailLink" href="mailto:arman.nikkhah@utdallas.edu?subject=Summer%20%E2%80%9926%20Internship%20Inquiry">arman.nikkhah@utdallas.edu</a>
+            </p>
+            <p>
+              <button class="btn-ghost small" id="copyEmailBtn" aria-describedby="copyEmailStatus">Copy email</button>
+              <span id="copyEmailStatus" class="sr-only" role="status" aria-live="polite"></span>
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <h3>Profiles</h3>
+            <ul>
+              <li><a href="https://www.linkedin.com/in/arman-nik-khah/" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a href="https://github.com/IamArmanNikkhah?tab=repositories" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+          </div>
+
+          <div class="contact-card">
+            <h3>Quick Note</h3>
+            <!-- Mailto form (no backend). JS will build the mailto link from this form. -->
+            <form id="contactForm" aria-label="Contact form">
+              <label for="msg" class="sr-only">Message</label>
+              <textarea id="msg" name="msg" rows="4" placeholder="Short note (recruiter intro, team, timeline)"></textarea>
+              <button type="submit" class="btn">Open Email Draft</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================================================================
+       FOOTER
+  ================================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Arman Nik Khah • Last updated: <time id="lastUpdated" datetime="2025-09-30">Sep 30, 2025</time></p>
+      <a class="back-to-top" href="#top" id="backToTop">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+</body>
+</html>
