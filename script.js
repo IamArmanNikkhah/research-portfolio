@@ -1,69 +1,66 @@
-/* =====================================================================
-   Minimal interactivity: mobile nav, recruiter mode, copy email, mailto form
-   ===================================================================== */
+/* =========================================================
+   Minimal JS: mobile nav toggle, active-section highlight,
+   and dynamic year in footer. No external dependencies.
+   ========================================================= */
 
-// Mobile navigation toggle
+// Mobile nav toggle
 const navToggle = document.getElementById('navToggle');
-const siteNav = document.getElementById('siteNav');
+const siteNav = document.querySelector('.site-nav');
+
 if (navToggle && siteNav) {
   navToggle.addEventListener('click', () => {
     const isOpen = siteNav.classList.toggle('open');
     navToggle.setAttribute('aria-expanded', String(isOpen));
   });
-}
 
-// Recruiter Mode: hides detail-heavy sections for quick scanning
-const recruiterBtn = document.getElementById('recruiterModeBtn');
-if (recruiterBtn) {
-  recruiterBtn.addEventListener('click', () => {
-    const pressed = recruiterBtn.getAttribute('aria-pressed') === 'true';
-    const next = !pressed;
-    recruiterBtn.setAttribute('aria-pressed', String(next));
-    document.documentElement.classList.toggle('recruiter-mode', next);
-    recruiterBtn.textContent = next ? 'Recruiter Mode: On' : 'Recruiter Mode';
-  });
-}
-
-// Back to top (progressive enhancement)
-const backToTop = document.getElementById('backToTop');
-if (backToTop) {
-  backToTop.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-}
-
-// Year + (optional) last updated date
-const yearEl = document.getElementById('year');
-if (yearEl) yearEl.textContent = new Date().getFullYear();
-
-// Copy email to clipboard
-const copyBtn = document.getElementById('copyEmailBtn');
-const copyStatus = document.getElementById('copyEmailStatus');
-const emailLink = document.getElementById('emailLink');
-if (copyBtn && copyStatus && emailLink) {
-  copyBtn.addEventListener('click', async () => {
-    const email = emailLink.textContent.trim();
-    try {
-      await navigator.clipboard.writeText(email);
-      copyStatus.textContent = 'Email copied to clipboard.';
-      setTimeout(() => (copyStatus.textContent = ''), 3000);
-    } catch {
-      copyStatus.textContent = 'Press Ctrl/Cmd+C to copy.';
-      setTimeout(() => (copyStatus.textContent = ''), 3000);
+  // Close menu when a link is clicked (mobile)
+  siteNav.addEventListener('click', (e) => {
+    if (e.target.matches('a')) {
+      siteNav.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
     }
   });
 }
 
-// Contact form -> opens a prefilled mailto (no backend required)
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const msg = (document.getElementById('msg').value || '').trim();
-    const subject = encodeURIComponent("Summer ’26 Internship Inquiry");
-    const body = encodeURIComponent(msg.length ? msg : "Hello Arman,\n\nI'm reaching out regarding a Summer ’26 opportunity.\n\n—");
-    const mailto = `mailto:arman.nikkhah@utdallas.edu?subject=${subject}&body=${body}`;
-    window.location.href = mailto;
+// Active section highlighting in nav (IntersectionObserver)
+const sections = document.querySelectorAll('main section[id], .hero[id]');
+const navLinks = document.querySelectorAll('.site-nav a[href^="#"]');
+
+const sectionMap = {};
+sections.forEach(sec => sectionMap[`#${sec.id}`] = sec);
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    const id = `#${entry.target.id}`;
+    const link = document.querySelector(`.site-nav a[href="${id}"]`);
+    if (!link) return;
+
+    if (entry.isIntersecting) {
+      navLinks.forEach(l => l.removeAttribute('aria-current'));
+      link.setAttribute('aria-current', 'page');
+    }
   });
-}
+}, {
+  rootMargin: '-40% 0px -55% 0px',
+  threshold: 0.01
+});
+
+sections.forEach(sec => observer.observe(sec));
+
+// Footer year
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+/* Accessibility: prefer-reduced-motion friendly smooth scroll
+   (native CSS smooth scroll is used; here we ensure focus management). */
+navLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    const href = link.getAttribute('href');
+    if (!href || !href.startsWith('#')) return;
+    const tgt = document.querySelector(href);
+    if (!tgt) return;
+    // Allow default smooth behavior, then move focus for a11y
+    setTimeout(() => tgt.setAttribute('tabindex', '-1'), 0);
+    setTimeout(() => tgt.focus({ preventScroll: true }), 400);
+  });
+});
