@@ -1,45 +1,49 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- Meta basics -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Arman Nik Khah — Researcher in XR/360° streaming, spatial audio, and low-latency real-time systems. Publications, projects, teaching, and résumé for recruiters." />
-  <meta name="theme-color" content="#0f172a" />
-
-  <!-- Title -->
-  <title>Arman Nik Khah — Research | Realtime Systems</title>
-
-  <!-- Fonts (Inter) -->
+  <title>Arman Nik Khah — PhD Candidate in Intelligent Systems</title>
+  <meta name="description" content="PhD candidate Arman Nik Khah specializes in XR and immersive streaming, machine learning for real-time media, and risk-aware adaptive bitrate systems." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Arman Nik Khah — Research | Realtime Systems" />
-  <meta property="og:description" content="XR/360° streaming, spatial audio, and low-latency systems. Publications, projects, teaching, and résumé." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="#" />
-  <meta property="og:image" content="#" />
-
-  <!-- Canonical (replace with your domain when deployed) -->
-  <link rel="canonical" href="#" />
-
-  <!-- Favicon (optional) -->
-  <link rel="icon" href="data:," />
-
-  <!-- Structured Data (Person + one publication) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+          },
+          colors: {
+            brand: {
+              50: '#f5f8ff',
+              100: '#e6edff',
+              200: '#cdd9ff',
+              600: '#3554ff',
+              700: '#2a45d9',
+              900: '#172766'
+            }
+          }
+        }
+      }
+    }
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Arman Nik Khah",
-    "jobTitle": "Graduate Researcher",
+    "jobTitle": "PhD Candidate",
     "email": "mailto:arman.nikkhah@utdallas.edu",
-    "url": "#",
+    "telephone": "+1-682-226-5082",
+    "url": "https://iamarmannikkhah.github.io/research-portfolio/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dallas",
+      "addressRegion": "TX"
+    },
     "sameAs": [
       "https://www.linkedin.com/in/arman-nik-khah/",
       "https://github.com/IamArmanNikkhah"
@@ -49,366 +53,384 @@
       "name": "University of Texas at Dallas"
     },
     "knowsAbout": [
-      "XR/360° streaming", "Spatial audio", "Realtime media", "WebRTC",
-      "QoE/ABR", "C/C++", "Python", "PyTorch", "GStreamer", "FFmpeg"
+      "XR and immersive streaming",
+      "Viewport prediction",
+      "Risk-aware adaptive bitrate",
+      "WebRTC",
+      "PyTorch",
+      "FFmpeg",
+      "GStreamer",
+      "C++",
+      "Python"
     ]
   }
   </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "name": "Unsupervised Bayesian Surprise Detection in Spatial Audio with Convolutional Variational Autoencoder and LSTM Model",
-    "author": [
-      {"@type":"Person","name":"Arman Nik Khah"},
-      {"@type":"Person","name":"Chitsein Htun"},
-      {"@type":"Person","name":"Ravi Prakash"}
-    ],
-    "datePublished": "2024",
-    "isPartOf": {
-      "@type": "PublicationVolume",
-      "name": "IMX Workshops ’24"
-    },
-    "identifier": "https://doi.org/10.1145/3672406.3672422",
-    "url": "https://dl.acm.org/doi/10.1145/3672406.3672422"
-  }
-  </script>
 </head>
-<body>
-  <!-- Skip link for accessibility -->
-  <a class="skip-link" href="#main">Skip to content</a>
+<body class="bg-slate-950 text-slate-100 font-sans">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:ring-2 focus:ring-offset-2 focus:ring-brand-600 focus:ring-offset-slate-950 px-3 py-2 rounded-md bg-brand-600 text-white">Skip to content</a>
 
-  <!-- Site Header -->
-  <header class="site-header" role="banner">
-    <div class="container header-inner">
-      <div class="brand">
-        <a href="#top" class="logo" aria-label="Home">
-          <span class="avatar" aria-hidden="true">A</span>
-          <strong>Arman Nik Khah</strong>
-        </a>
-        <p class="tagline">XR/360° Streaming • Spatial Audio • Realtime Systems</p>
-      </div>
-      <button id="navToggle" class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
-        <span class="nav-bar" aria-hidden="true"></span>
-        <span class="nav-bar" aria-hidden="true"></span>
-        <span class="nav-bar" aria-hidden="true"></span>
+  <header class="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-4">
+      <a href="#top" class="flex items-center gap-3" aria-label="Home">
+        <span class="flex h-11 w-11 items-center justify-center rounded-full bg-brand-600 text-lg font-semibold">AN</span>
+        <div>
+          <p class="text-lg font-semibold text-white">Arman Nik Khah</p>
+          <p class="text-sm text-slate-400">PhD Candidate · Intelligent Systems</p>
+        </div>
+      </a>
+      <button type="button" aria-expanded="false" aria-controls="primary-navigation" id="navToggle" class="flex h-11 w-11 items-center justify-center rounded-md border border-slate-800 text-slate-200 transition hover:border-brand-600 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-600 lg:hidden">
+        <span class="sr-only">Toggle navigation</span>
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
       </button>
-      <nav class="site-nav" aria-label="Primary">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#contact" class="btn btn--primary">Contact</a></li>
-        </ul>
+      <nav id="primary-navigation" class="hidden items-center gap-6 text-sm font-medium text-slate-200 lg:flex">
+        <a class="transition hover:text-white" href="#summary">Summary</a>
+        <a class="transition hover:text-white" href="#research">Research / Projects</a>
+        <a class="transition hover:text-white" href="#publications">Publications</a>
+        <a class="transition hover:text-white" href="#experience">Experience</a>
+        <a class="transition hover:text-white" href="#education">Education</a>
+        <a class="transition hover:text-white" href="#skills">Skills</a>
+        <a class="transition hover:text-white" href="#selected-open-source">Selected Open Source</a>
+        <a class="rounded-full border border-brand-600 px-4 py-2 text-brand-100 transition hover:bg-brand-600 hover:text-white" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section id="about" class="hero" role="region" aria-labelledby="about-title">
-    <div class="container">
-      <div class="hero-grid">
-        <div>
-          <h1 id="about-title" class="hero-title">Graduate Researcher focused on <span class="accent">low-latency media</span> & <span class="accent">spatial audio</span></h1>
-          <p class="lead">
-            M.S. ’25; PhD in progress (UT Dallas). Published at IMX Workshops ’24 (CVAE–LSTM surprise detection). 
-            Submissions on <strong>SAE</strong> (geometry-correct viewport prediction) and <strong>MARC</strong> (risk-aware ABR with spatial audio).
-            Strengths: C/C++, Python, WebRTC, FFmpeg/GStreamer, QoE/ABR, PyTorch, CUDA/NVENC (foundational).
+  <div id="mobile-menu" class="hidden border-b border-slate-800 bg-slate-950/95 lg:hidden">
+    <nav class="mx-auto flex max-w-6xl flex-col gap-2 px-6 py-4 text-sm font-medium text-slate-100">
+      <a class="rounded-md px-3 py-2 transition hover:bg-slate-800" href="#summary">Summary</a>
+      <a class="rounded-md px-3 py-2 transition hover:bg-slate-800" href="#research">Research / Projects</a>
+      <a class="rounded-md px-3 py-2 transition hover:bg-slate-800" href="#publications">Publications</a>
+      <a class="rounded-md px-3 py-2 transition hover:bg-slate-800" href="#experience">Experience</a>
+      <a class="rounded-md px-3 py-2 transition hover:bg-slate-800" href="#education">Education</a>
+      <a class="rounded-md px-3 py-2 transition hover:bg-slate-800" href="#skills">Skills</a>
+      <a class="rounded-md px-3 py-2 transition hover:bg-slate-800" href="#selected-open-source">Selected Open Source</a>
+      <a class="rounded-md px-3 py-2 transition hover:bg-slate-800" href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <main id="main" class="relative isolate" id="top">
+    <section id="summary" class="relative overflow-hidden">
+      <div class="absolute inset-0 -z-10 bg-gradient-to-br from-slate-900 via-slate-950 to-black"></div>
+      <div class="mx-auto flex max-w-6xl flex-col gap-12 px-6 py-16 lg:flex-row lg:items-start lg:py-24">
+        <div class="flex-1">
+          <p class="text-sm font-semibold uppercase tracking-[0.35em] text-brand-200">Summary</p>
+          <h1 class="mt-4 text-3xl font-semibold text-white sm:text-4xl">PhD candidate specializing in high-performance media systems for XR and immersive streaming.</h1>
+          <p class="mt-6 max-w-2xl text-lg leading-relaxed text-slate-300">
+            Proven ability to architect and implement novel machine learning models for real-time applications, demonstrated by a peer-reviewed publication (ACM International Conference on Interactive Media Experiences ’24) and two submitted manuscripts on field of viewport prediction and risk-aware ABR in 360 media. Expertise in PyTorch, real-time streaming protocols (WebRTC, RTP), media frameworks (FFmpeg, GStreamer), and C++/Python.
           </p>
-          <ul class="quick-facts" role="list">
-            <li><strong>Work Authorization:</strong> F-1 CPT/OPT</li>
-            <li><strong>Seeking:</strong> Summer ’26 — Research (Speech/Audio/Systems) or SWE (Realtime/Systems)</li>
-            <li><strong>Preferences:</strong> Remote OK • Dream: Google, Apple, Meta, Microsoft</li>
-          </ul>
-          <div class="cta-row">
-            <a class="btn btn--primary" href="mailto:arman.nikkhah@utdallas.edu">Email</a>
-            <a class="btn" href="https://www.linkedin.com/in/arman-nik-khah/" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="btn" href="https://github.com/IamArmanNikkhah?tab=repositories" target="_blank" rel="noopener">GitHub</a>
-            <a class="btn btn--ghost" href="#" target="_blank" rel="noopener">Download CV (PDF)</a>
-          </div>
+          <dl class="mt-10 grid gap-4 text-sm leading-6 text-slate-200 sm:grid-cols-2">
+            <div>
+              <dt class="text-slate-400">Location</dt>
+              <dd class="font-medium text-white">Dallas, TX</dd>
+            </div>
+            <div>
+              <dt class="text-slate-400">Email</dt>
+              <dd class="font-medium text-white">
+                <a class="hover:underline" href="mailto:arman.nikkhah@utdallas.edu">arman.nikkhah@utdallas.edu</a>
+              </dd>
+            </div>
+            <div>
+              <dt class="text-slate-400">Phone</dt>
+              <dd class="font-medium text-white">
+                <a class="hover:underline" href="tel:+16822265082">(682) 226-5082</a>
+              </dd>
+            </div>
+            <div>
+              <dt class="text-slate-400">LinkedIn</dt>
+              <dd class="font-medium text-white">
+                <a class="hover:underline" href="https://www.linkedin.com/in/arman-nik-khah/" target="_blank" rel="noopener">linkedin.com/in/arman-nik-khah</a>
+              </dd>
+            </div>
+            <div>
+              <dt class="text-slate-400">GitHub</dt>
+              <dd class="font-medium text-white">
+                <a class="hover:underline" href="https://github.com/IamArmanNikkhah" target="_blank" rel="noopener">github.com/IamArmanNikkhah</a>
+              </dd>
+            </div>
+            <div>
+              <dt class="text-slate-400">Portfolio</dt>
+              <dd class="font-medium text-white">
+                <a class="hover:underline" href="https://iamarmannikkhah.github.io/research-portfolio/" target="_blank" rel="noopener">research-portfolio</a>
+              </dd>
+            </div>
+          </dl>
         </div>
-        <aside class="hero-card" aria-label="Highlights">
-          <h2 class="eyebrow">Highlights</h2>
-          <ul>
-            <li>IMX ’24 workshop paper (spatial-audio surprise detection)</li>
-            <li>Realtime streaming: WebRTC • RTP/RTCP • HLS/DASH • OMAF</li>
-            <li>QoE/ABR • VMAF/SSIM/PSNR • latency/jitter (p95/p99)</li>
-            <li>Teaching & mentoring (≈50 students / term)</li>
-          </ul>
+        <aside class="flex w-full max-w-sm flex-col gap-4 rounded-2xl border border-slate-800 bg-slate-900/60 p-6 shadow-2xl shadow-slate-900/50">
+          <p class="text-sm text-slate-300">Advisor: Dr. Ravi Prakash</p>
+          <p class="text-sm text-slate-300">Research: Viewport Prediction, 360° ABR Algorithms (latency-/QoE-aware), 360° Media Streaming (tiled/OMAF video, edge caching &amp; prefetch, foveated rendering, RTP/WebRTC)</p>
+          <div class="grid gap-3 text-sm text-slate-300">
+            <a class="rounded-lg border border-slate-800 bg-slate-900/50 px-4 py-3 text-white transition hover:border-brand-600 hover:bg-slate-900" href="mailto:arman.nikkhah@utdallas.edu" aria-label="Email">arman.nikkhah@utdallas.edu</a>
+            <a class="rounded-lg border border-slate-800 bg-slate-900/50 px-4 py-3 text-white transition hover:border-brand-600 hover:bg-slate-900" href="https://www.linkedin.com/in/arman-nik-khah/" target="_blank" rel="noopener" aria-label="LinkedIn">linkedin.com/in/arman-nik-khah</a>
+            <a class="rounded-lg border border-slate-800 bg-slate-900/50 px-4 py-3 text-white transition hover:border-brand-600 hover:bg-slate-900" href="https://github.com/IamArmanNikkhah" target="_blank" rel="noopener" aria-label="GitHub">github.com/IamArmanNikkhah</a>
+          </div>
         </aside>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <main id="main">
-    <!-- Skills -->
-    <section id="skills" class="section" aria-labelledby="skills-title">
-      <div class="container">
-        <h2 id="skills-title">Skills</h2>
-        <div class="cards grid-3">
-          <article class="card">
-            <h3>Realtime / Streaming</h3>
-            <ul>
-              <li>WebRTC, RTP/RTCP, HLS/DASH, MPEG-OMAF (360°)</li>
-              <li>FFmpeg, GStreamer • QoE/ABR (VMAF/SSIM/PSNR)</li>
-              <li>Observability & latency (p95/p99)</li>
+    <section id="research" class="bg-slate-950">
+      <div class="mx-auto max-w-6xl px-6 py-16 lg:py-20">
+        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-brand-200">Research / Projects</p>
+        <h2 class="mt-3 text-2xl font-semibold text-white sm:text-3xl">Research / Projects</h2>
+        <div class="mt-10 grid gap-8 md:grid-cols-2">
+          <article class="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-6 shadow-xl shadow-slate-900/40">
+            <div class="flex items-center justify-between gap-3">
+              <h3 class="text-xl font-semibold text-white">MARC: Meta-Cognitively Adaptive Risk Control for 360° ABR</h3>
+              <span class="rounded-full bg-brand-100/10 px-3 py-1 text-xs font-semibold tracking-wide text-brand-200">Risk-aware audiovisual ABR</span>
+            </div>
+            <ul class="mt-5 list-disc space-y-3 pl-5 text-sm text-slate-300">
+              <li><strong class="text-white">Engineered</strong> a risk-aware adaptive bitrate (ABR) controller that uses Unscented Kalman Filter (UKF) entropy to minimize poor QoE events (e.g., rebuffering) in volatile networks.</li>
+              <li><strong class="text-white">Implemented</strong> an uncertainty-gated fusion mechanism that intelligently combines video and spatial audio saliency data to make more robust bitrate decisions.</li>
+              <li><strong class="text-white">Designed to deliver</strong> an A% improvement in 1st-percentile QoE and increase bandwidth efficiency by B%, with a decision latency under 50 ms.</li>
             </ul>
           </article>
-          <article class="card">
-            <h3>ML / Audio</h3>
-            <ul>
-              <li>PyTorch, TensorFlow • VAEs/CVAEs, LSTM/Seq2Seq, Transformers</li>
-              <li>Calibration (ECE/NLL) • Risk (CVaR)</li>
-              <li>Ambisonics (FOA/B-format), STFT, mel-spec, AEM</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>Systems / Tooling</h3>
-            <ul>
-              <li>C/C++, Python • Linux • networking • concurrency</li>
-              <li>Docker, Git • CUDA/NVENC (foundational)</li>
-              <li>Codecs: H.264/AVC, H.265/HEVC, AV1</li>
+          <article class="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-6 shadow-xl shadow-slate-900/40">
+            <div class="flex items-center justify-between gap-3">
+              <h3 class="text-xl font-semibold text-white">Unsupervised Bayesian Surprise Detection in Spatial Audio (Published)</h3>
+              <span class="rounded-full bg-brand-100/10 px-3 py-1 text-xs font-semibold tracking-wide text-brand-200">IMX Workshops ’24</span>
+            </div>
+            <ul class="mt-5 list-disc space-y-3 pl-5 text-sm text-slate-300">
+              <li><strong class="text-white">Architected</strong> an unsupervised CVAE-LSTM pipeline to detect Bayesian surprise in real-time spatial audio streams (FOA B-format), successfully modeling the Temporal Evolution of Attention (TEA).</li>
+              <li><strong class="text-white">Processed</strong> audio signals through a custom STFT, mel-spectrogram, and Audio Energy Map (AEM) pipeline to extract and localize salient audio events for the model.</li>
+              <li><strong class="text-white">Achieved</strong> a high F1-score on a key test scenario by defining a novel surprise metric combining reconstruction loss (NLL) and predictive latent-space divergence (KL).</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Projects / Research -->
-    <section id="projects" class="section" aria-labelledby="projects-title">
-      <div class="container">
-        <h2 id="projects-title">Projects & Research</h2>
-
-        <div class="cards">
-          <article class="card project">
-            <div class="card-head">
-              <h3>SAE — Spatiotemporal Attentive Entropy</h3>
-              <span class="badge">Viewport Prediction</span>
-            </div>
-            <p class="muted">SO(3)-invariant cross-entropy on S² between vMF attention and prediction; O(1) streaming estimator; Fisher-weighted multiscale fusion, integrated with a lightweight LSTM for realtime forecasting.</p>
-            <ul class="bullets">
-              <li>Established accuracy–latency Pareto frontier with realtime E2E latency budgets (CPU/GPU prototypes).</li>
-              <li>Validated calibration (ECE-sphere, NLL); robust to sampling-rate shifts / synthetic dropouts.</li>
-              <li>Artifacts planned: deterministic splits, Docker/LUTs.</li>
-            </ul>
-            <div class="links">
-              <a href="https://github.com/IamArmanNikkhah?tab=repositories" target="_blank" rel="noopener" class="text-link">Repo (incoming)</a>
-            </div>
-          </article>
-
-          <article class="card project">
-            <div class="card-head">
-              <h3>MARC — Meta-Cognitively Adaptive Risk Control</h3>
-              <span class="badge">Risk-Aware ABR</span>
-            </div>
-            <p class="muted">Couples UKF posterior entropy to a CVaR penalty to hedge tail-QoE under volatile networks; fuses <strong>video + spatial audio</strong> in the control loop.</p>
-            <ul class="bullets">
-              <li>Vectorized coarse-to-fine candidate search; entropy-gated saliency; optional per-tile risk micro-actuation.</li>
-              <li>Engineering focus: decision latency ≤ realtime budget; throughput/quality balance.</li>
-            </ul>
-            <div class="links">
-              <a href="https://github.com/IamArmanNikkhah?tab=repositories" target="_blank" rel="noopener" class="text-link">Repo (incoming)</a>
-            </div>
-          </article>
-
-          <article class="card project">
-            <div class="card-head">
-              <h3>Bayesian Surprise Detection for Spatial Audio</h3>
-              <span class="badge">Published — IMX ’24</span>
-            </div>
-            <p class="muted">Unsupervised CVAE–LSTM on FOA (4-ch B-format) modeling TEA (Temporal Evolution of Attention). Pipeline: 16 kHz → STFT + pre-emphasis + Hamming → log mel-spectrogram; AEM via circular harmonics to localize sources.</p>
-            <ul class="bullets">
-              <li>Surprise metric: weighted negative expected log-likelihood + KL between LSTM-predicted next-latent and CVAE posterior.</li>
-              <li>Achieved <strong>F1=100%</strong> on studied scenario; artifacts planned.</li>
-            </ul>
-            <div class="links">
-              <a href="https://dl.acm.org/doi/10.1145/3672406.3672422" target="_blank" rel="noopener" class="text-link">DOI: 10.1145/3672406.3672422</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Publications -->
-    <section id="publications" class="section" aria-labelledby="pubs-title">
-      <div class="container">
-        <h2 id="pubs-title">Publications</h2>
-        <ol class="pubs">
+    <section id="publications" class="bg-slate-950">
+      <div class="mx-auto max-w-6xl px-6 py-16 lg:py-20">
+        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-brand-200">Publications</p>
+        <h2 class="mt-3 text-2xl font-semibold text-white sm:text-3xl">Publications</h2>
+        <ol class="mt-8 space-y-6 text-sm leading-6 text-slate-300">
           <li>
-            <strong>Arman Nik Khah</strong>, Chitsein Htun, Ravi Prakash.
-            <em>Unsupervised Bayesian Surprise Detection in Spatial Audio with Convolutional Variational Autoencoder and LSTM Model.</em>
-            IMX Workshops ’24, Stockholm. DOI:
-            <a href="https://dl.acm.org/doi/10.1145/3672406.3672422" target="_blank" rel="noopener">10.1145/3672406.3672422</a>
+            <p><strong class="text-white">Nik Khah, A.</strong>, Prakash, R. <em class="text-slate-100">Spatiotemporal Attentive Entropy: A Geometry-Correct Cross-Entropy on S² for Calibrated, Low-Latency Viewport Prediction</em>. Manuscript submitted, 2025.</p>
           </li>
           <li>
-            <strong>Arman Nik Khah</strong>.
-            <em>Spatiotemporal Attentive Entropy: A Geometry-Correct Cross-Entropy on S² for Calibrated, Low-Latency Viewport Prediction.</em>
-            Manuscript submitted, 2025. (Preprint pending)
+            <p><strong class="text-white">Nik Khah, A.</strong>, Prakash, R. <em class="text-slate-100">Self-Aware Streaming: Using Model Entropy to Control Tail-Risk in 360° ABR</em>. Manuscript submitted, 2025.</p>
           </li>
           <li>
-            <strong>Arman Nik Khah</strong>.
-            <em>Self-Aware Streaming: Using Model Entropy to Control Tail-Risk in 360° ABR.</em>
-            Manuscript submitted, 2025. (Preprint pending)
+            <p><strong class="text-white">Nik Khah, A.</strong>, Htun, C., Prakash, R. <em class="text-slate-100">Unsupervised Bayesian Surprise Detection in Spatial Audio with Convolutional Variational Autoencoder and LSTM Model</em>. <span class="text-slate-100">ACM International Conference on Interactive Media Experiences ’24</span>, Stockholm, Sweden. DOI: <a class="font-medium text-brand-200 hover:text-brand-100" href="https://dl.acm.org/doi/10.1145/3672406.3672422" target="_blank" rel="noopener">10.1145/3672406.3672422</a>.</p>
           </li>
         </ol>
       </div>
     </section>
 
-    <!-- Experience -->
-    <section id="experience" class="section" aria-labelledby="exp-title">
-      <div class="container">
-        <h2 id="exp-title">Experience — Teaching & Mentoring</h2>
-        <div class="timeline">
-          <article class="titem">
-            <header class="tmeta">
-              <h3>Teaching Assistant — Computer Networks</h3>
-              <span class="torg">University of Texas at Dallas</span>
-              <span class="tdate">Fall 2025 • Dallas, TX</span>
+    <section id="experience" class="bg-slate-950">
+      <div class="mx-auto max-w-6xl px-6 py-16 lg:py-20">
+        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-brand-200">Experience</p>
+        <h2 class="mt-3 text-2xl font-semibold text-white sm:text-3xl">Experience</h2>
+        <div class="mt-10 space-y-8 border-l border-slate-800 pl-6">
+          <article class="relative">
+            <span class="absolute -left-[1.375rem] mt-1 inline-flex h-3 w-3 rounded-full bg-brand-600 ring-4 ring-slate-950"></span>
+            <header class="flex flex-col gap-1 text-white">
+              <h3 class="text-lg font-semibold">Teaching Assistant — Computer Networks</h3>
+              <p class="text-sm text-slate-300">University of Texas at Dallas · Fall 2025</p>
             </header>
-            <ul>
-              <li>Delivered <strong>multiple lectures</strong>; led labs/recitations on RTP/RTCP/WebRTC.</li>
-              <li>Coached <strong>latency/jitter</strong> measurement & <strong>QoE</strong> evaluation for <strong>≈50 students</strong>.</li>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-300">
+              <li><strong class="text-white">Mentored</strong> and instructed a cohort of ~50 students in advanced networking topics.</li>
+              <li><strong class="text-white">Delivered</strong> guest lectures and coached teams on network performance analysis, improving student comprehension.</li>
             </ul>
           </article>
-
-          <article class="titem">
-            <header class="tmeta">
-              <h3>Teaching Assistant — Advanced Operating Systems</h3>
-              <span class="torg">University of Texas at Dallas</span>
-              <span class="tdate">Fall 2024 • Dallas, TX</span>
+          <article class="relative">
+            <span class="absolute -left-[1.375rem] mt-1 inline-flex h-3 w-3 rounded-full bg-brand-600 ring-4 ring-slate-950"></span>
+            <header class="flex flex-col gap-1 text-white">
+              <h3 class="text-lg font-semibold">Teaching Assistant — Advanced Operating Systems</h3>
+              <p class="text-sm text-slate-300">University of Texas at Dallas · Fall 2024</p>
             </header>
-            <ul>
-              <li>Mentored distributed systems projects (synchronization, kernel subsystems).</li>
-              <li>Guided profiling, debugging, and performance instrumentation.</li>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-300">
+              <li><strong class="text-white">Guided</strong> student teams through complex projects on distributed systems, kernel subsystems, and synchronization, providing mentorship on large-scale profiling and debugging techniques.</li>
             </ul>
           </article>
-
-          <article class="titem">
-            <header class="tmeta">
-              <h3>Teaching Assistant — Programming Language Paradigms</h3>
-              <span class="torg">University of Texas at Dallas</span>
-              <span class="tdate">Spring 2024; Fall 2023 • Dallas, TX</span>
+          <article class="relative">
+            <span class="absolute -left-[1.375rem] mt-1 inline-flex h-3 w-3 rounded-full bg-brand-600 ring-4 ring-slate-950"></span>
+            <header class="flex flex-col gap-1 text-white">
+              <h3 class="text-lg font-semibold">Teaching Assistant — Programming Language Paradigms</h3>
+              <p class="text-sm text-slate-300">UTD · Fall 2023; Spring 2024</p>
             </header>
-            <ul>
-              <li>Reinforced functional/OO paradigms, type systems, runtime models; office hours and assessments.</li>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-300">
+              <li><strong class="text-white">Reinforced</strong> core CS concepts including functional/OO paradigms, type systems, and runtime models for 50+ students through weekly office hours and targeted review sessions.</li>
             </ul>
           </article>
-
-          <article class="titem">
-            <header class="tmeta">
-              <h3>Supervisor — Undergraduate Research Project Course</h3>
-              <span class="torg">University of Texas at Dallas</span>
-              <span class="tdate">Ongoing • Dallas, TX</span>
+          <article class="relative">
+            <span class="absolute -left-[1.375rem] mt-1 inline-flex h-3 w-3 rounded-full bg-brand-600 ring-4 ring-slate-950"></span>
+            <header class="flex flex-col gap-1 text-white">
+              <h3 class="text-lg font-semibold">Supervisor — Undergraduate Research Project Course</h3>
+              <p class="text-sm text-slate-300">UTD · Ongoing</p>
             </header>
-            <ul>
-              <li>Supervise undergrad research; mentor experimental design, implementation, evaluation, and technical writing.</li>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-300">
+              <li><strong class="text-white">Supervise</strong> a team of 30 undergraduate students, providing mentorship on experimental design, C++/Python implementation, and technical writing for their research projects.</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Education -->
-    <section id="education" class="section" aria-labelledby="edu-title">
-      <div class="container">
-        <h2 id="edu-title">Education</h2>
-        <div class="edu-grid">
-          <article class="card">
-            <h3>PhD in Intelligent Systems (in progress)</h3>
-            <p><strong>University of Texas at Dallas — Computer Science</strong></p>
-            <p><em>Expected Aug 2028</em></p>
-            <p>GPA: 3.8/4.0 • Advisor: Dr. Ravi Prakash • Research: viewport prediction, uncertainty calibration, risk-aware streaming, AI & VR (medical)</p>
+    <section id="education" class="bg-slate-950">
+      <div class="mx-auto max-w-6xl px-6 py-16 lg:py-20">
+        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-brand-200">Education</p>
+        <h2 class="mt-3 text-2xl font-semibold text-white sm:text-3xl">Education</h2>
+        <div class="mt-10 grid gap-6 md:grid-cols-2">
+          <article class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 shadow-xl shadow-slate-900/40">
+            <h3 class="text-xl font-semibold text-white">PhD in Intelligent Systems (in progress)</h3>
+            <p class="mt-2 text-sm text-slate-300"><strong class="text-white">University of Texas at Dallas — Computer Science</strong></p>
+            <p class="mt-2 text-sm text-slate-300 italic">Expected Aug 2028</p>
+            <p class="mt-4 text-sm text-slate-300">Advisor: Dr. Ravi Prakash · Research: Viewport Prediction, 360° ABR Algorithms (latency-/QoE-aware), 360° Media Streaming (tiled/OMAF video, edge caching &amp; prefetch, foveated rendering, RTP/WebRTC)</p>
           </article>
-          <article class="card">
-            <h3>M.S. in Intelligent Systems</h3>
-            <p><strong>University of Texas at Dallas</strong></p>
-            <p><em>May 2025</em></p>
-            <p>Graduate focus across computer vision, immersive media, and ML systems.</p>
+          <article class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 shadow-xl shadow-slate-900/40">
+            <h3 class="text-xl font-semibold text-white">M.S. in Intelligent Systems</h3>
+            <p class="mt-2 text-sm text-slate-300"><strong class="text-white">University of Texas at Dallas</strong></p>
+            <p class="mt-2 text-sm text-slate-300 italic">May 2025</p>
+            <p class="mt-4 text-sm text-slate-300">GPA: 3.8/4.0 · Selected Coursework (M.S.): Statistical Methods for Data Science; Design &amp; Analysis of Algorithms; Machine Learning; Natural Language Processing; Virtual Reality; Advanced Operating Systems; Artificial Intelligence; Multimedia Systems; Database Design; Computer Vision; Recent Advances in Networking</p>
           </article>
-        </div>
-
-        <div class="coursework">
-          <h3>Selected Coursework</h3>
-          <ul class="chips" role="list">
-            <li>Advanced Machine Learning</li>
-            <li>Deep Learning</li>
-            <li>Computer Vision</li>
-            <li>Natural Language Processing</li>
-            <li>Probabilistic Modeling</li>
-            <li><strong>Computer Networks</strong></li>
-          </ul>
         </div>
       </div>
     </section>
 
-    <!-- Open Source -->
-    <section class="section" aria-labelledby="oss-title">
-      <div class="container">
-        <h2 id="oss-title">Selected Open Source</h2>
-        <ul class="list">
-          <li>Spatial-audio <em>surprise detection</em> (paper-aligned) — planned artifact release — <a href="https://github.com/IamArmanNikkhah?tab=repositories" target="_blank" rel="noopener">GitHub</a></li>
-          <li>SAE reference implementation — release aligned with review cycle</li>
-          <li>MARC (risk-aware ABR) controller — CVaR policy with audio-visual fusion</li>
+    <section id="skills" class="bg-slate-950">
+      <div class="mx-auto max-w-6xl px-6 py-16 lg:py-20">
+        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-brand-200">Skills</p>
+        <h2 class="mt-3 text-2xl font-semibold text-white sm:text-3xl">Skills</h2>
+        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 shadow-lg shadow-slate-900/40">
+            <h3 class="text-lg font-semibold text-white">Languages</h3>
+            <p class="mt-3 text-sm text-slate-300">C++, Python</p>
+          </article>
+          <article class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 shadow-lg shadow-slate-900/40">
+            <h3 class="text-lg font-semibold text-white">ML Frameworks</h3>
+            <p class="mt-3 text-sm text-slate-300">PyTorch, TensorFlow, Scikit-learn</p>
+          </article>
+          <article class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 shadow-lg shadow-slate-900/40">
+            <h3 class="text-lg font-semibold text-white">ML Concepts</h3>
+            <p class="mt-3 text-sm text-slate-300">VAEs/CVAEs, LSTM/Seq2Seq, Transformers, Uncertainty Calibration (ECE/NLL), CVaR</p>
+          </article>
+          <article class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 shadow-lg shadow-slate-900/40">
+            <h3 class="text-lg font-semibold text-white">Media Streaming</h3>
+            <p class="mt-3 text-sm text-slate-300">WebRTC, RTP/RTCP, HLS/DASH, FFmpeg, GStreamer, MPEG-OMAF</p>
+          </article>
+          <article class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 shadow-lg shadow-slate-900/40">
+            <h3 class="text-lg font-semibold text-white">Systems &amp; Tools</h3>
+            <p class="mt-3 text-sm text-slate-300">Linux, Docker, Git, Concurrency, Networking, CUDA/NVENC (foundational)</p>
+          </article>
+          <article class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 shadow-lg shadow-slate-900/40">
+            <h3 class="text-lg font-semibold text-white">Audio &amp; Signal</h3>
+            <p class="mt-3 text-sm text-slate-300">Ambisonics (FOA/B-format), STFT, Mel-Spectrograms, Audio Energy Maps (AEM)</p>
+          </article>
+          <article class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 shadow-lg shadow-slate-900/40">
+            <h3 class="text-lg font-semibold text-white">Codecs &amp; Metrics</h3>
+            <p class="mt-3 text-sm text-slate-300">H.264/AVC, H.265/HEVC, AV1, QoE (VMAF, SSIM, PSNR), Latency/Jitter</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="selected-open-source" class="bg-slate-950">
+      <div class="mx-auto max-w-6xl px-6 py-16 lg:py-20">
+        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-brand-200">Selected Open Source</p>
+        <h2 class="mt-3 text-2xl font-semibold text-white sm:text-3xl">Selected Open Source</h2>
+        <ul class="mt-8 list-disc space-y-4 pl-5 text-sm text-slate-300">
+          <li>Spatial-audio surprise detection — planned artifact release; <a class="font-medium text-brand-200 hover:text-brand-100" href="https://github.com/IamArmanNikkhah?tab=repositories" target="_blank" rel="noopener">GitHub</a>.</li>
+          <li>SAE reference implementation — release aligned with review cycle.</li>
+          <li>MARC (risk-aware ABR) controller — CVaR policy; audio-visual fusion.</li>
         </ul>
       </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section contact" aria-labelledby="contact-title">
-      <div class="container">
-        <h2 id="contact-title">Contact</h2>
-        <p class="lead">Open to Research (Speech/Audio/Systems) and SWE (Realtime/Systems) internships for <strong>Summer ’26</strong>; F-1 CPT/OPT eligible.</p>
-        <div class="contact-grid">
-          <a class="contact-card" href="mailto:arman.nikkhah@utdallas.edu" aria-label="Email Arman">
-            <span class="icon" aria-hidden="true">✉️</span>
-            <span>
-              <strong>Email</strong>
-              <em>arman.nikkhah@utdallas.edu</em>
-            </span>
-          </a>
-          <a class="contact-card" href="tel:+16822265082" aria-label="Call Arman">
-            <span class="icon" aria-hidden="true">📞</span>
-            <span>
-              <strong>Phone</strong>
-              <em>+1 (682) 226-5082</em>
-            </span>
-          </a>
-          <a class="contact-card" href="https://www.linkedin.com/in/arman-nik-khah/" target="_blank" rel="noopener" aria-label="Open LinkedIn">
-            <span class="icon" aria-hidden="true">🔗</span>
-            <span>
-              <strong>LinkedIn</strong>
-              <em>/in/arman-nik-khah</em>
-            </span>
-          </a>
-          <a class="contact-card" href="https://github.com/IamArmanNikkhah?tab=repositories" target="_blank" rel="noopener" aria-label="Open GitHub">
-            <span class="icon" aria-hidden="true">💻</span>
-            <span>
-              <strong>GitHub</strong>
-              <em>@IamArmanNikkhah</em>
-            </span>
-          </a>
+    <section id="contact" class="bg-slate-950">
+      <div class="mx-auto max-w-6xl px-6 py-16 lg:py-20">
+        <div class="rounded-3xl border border-slate-800 bg-gradient-to-br from-brand-900/40 via-slate-900 to-slate-950 px-6 py-12 shadow-2xl shadow-slate-900/50 sm:px-12">
+          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-brand-200">Contact</p>
+          <h2 class="mt-4 text-3xl font-semibold text-white sm:text-4xl">Contact</h2>
+          <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <a class="flex flex-col gap-1 rounded-2xl border border-slate-800 bg-slate-900/70 p-4 transition hover:border-brand-600 hover:bg-slate-900" href="mailto:arman.nikkhah@utdallas.edu" aria-label="Email">
+              <span class="text-sm text-white">arman.nikkhah@utdallas.edu</span>
+            </a>
+            <a class="flex flex-col gap-1 rounded-2xl border border-slate-800 bg-slate-900/70 p-4 transition hover:border-brand-600 hover:bg-slate-900" href="tel:+16822265082" aria-label="Phone">
+              <span class="text-sm text-white">(682) 226-5082</span>
+            </a>
+            <a class="flex flex-col gap-1 rounded-2xl border border-slate-800 bg-slate-900/70 p-4 transition hover:border-brand-600 hover:bg-slate-900" href="https://www.linkedin.com/in/arman-nik-khah/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <span class="text-sm text-white">linkedin.com/in/arman-nik-khah</span>
+            </a>
+            <a class="flex flex-col gap-1 rounded-2xl border border-slate-800 bg-slate-900/70 p-4 transition hover:border-brand-600 hover:bg-slate-900" href="https://github.com/IamArmanNikkhah" target="_blank" rel="noopener" aria-label="GitHub">
+              <span class="text-sm text-white">github.com/IamArmanNikkhah</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="container footer-inner">
+  <footer class="border-t border-slate-800 bg-slate-950/90">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-6 text-sm text-slate-400 sm:flex-row">
       <p>&copy; <span id="year"></span> Arman Nik Khah. All rights reserved.</p>
-      <nav aria-label="Footer">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#publications">Publications</a>
-        <a href="#education">Education</a>
-      </nav>
+      <div class="flex flex-wrap items-center gap-4">
+        <a class="transition hover:text-white" href="#summary">Summary</a>
+        <a class="transition hover:text-white" href="#research">Research / Projects</a>
+        <a class="transition hover:text-white" href="#publications">Publications</a>
+        <a class="transition hover:text-white" href="#education">Education</a>
+      </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="script.js" defer></script>
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelectorAll('a[href^="#"]');
+
+    if (navToggle && mobileMenu) {
+      navToggle.addEventListener('click', () => {
+        const open = mobileMenu.classList.toggle('hidden');
+        navToggle.setAttribute('aria-expanded', String(!open));
+      });
+
+      mobileMenu.addEventListener('click', (event) => {
+        if (event.target instanceof HTMLAnchorElement) {
+          mobileMenu.classList.add('hidden');
+          navToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
+    const yearEl = document.getElementById('year');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const id = `#${entry.target.id}`;
+        document.querySelectorAll('#primary-navigation a').forEach((link) => {
+          if (link.getAttribute('href') === id) {
+            link.classList.add('text-white');
+          } else {
+            link.classList.remove('text-white');
+          }
+        });
+      });
+    }, {
+      rootMargin: '-50% 0px -45% 0px',
+      threshold: 0.01
+    });
+
+    document.querySelectorAll('main section[id]').forEach((section) => observer.observe(section));
+
+    navLinks.forEach((link) => {
+      link.addEventListener('click', (event) => {
+        const href = link.getAttribute('href');
+        if (!href || !href.startsWith('#')) {
+          return;
+        }
+        const target = document.querySelector(href);
+        if (!target) {
+          return;
+        }
+        target.setAttribute('tabindex', '-1');
+        target.focus({ preventScroll: true });
+      });
+    });
+  </script>
 </body>
 </html>
